@@ -9,8 +9,8 @@ from mssql_cli import DBRead, DBWrite
 read_connection = DBRead(host='some_host', user='some_user', password='some_password', database='some_database')
 write_connection = DBWrite(host='some_host', user='some_user', password='some_password', database='some_database')
 
-read_connection.query("SELECT * FROM some_table")
-write_connection.query("SELECT * FROM some_table")
+results = read_connection.query("SELECT * FROM some_table")
+more_results = write_connection.query("SELECT * FROM some_table")
 write_connection.execute("INSERT INTO some_table VALUES ('some_data', 'some_more_data')")
 
 read_connection.close()
