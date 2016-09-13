@@ -1,5 +1,5 @@
 # mssql_cli
-A simple way to run terminal commands within a Python script.
+A way to run queries and execute commands against an MSSQL database.
 
 
 ## Code Example
