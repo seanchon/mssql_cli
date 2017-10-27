@@ -2,6 +2,21 @@
 A way to run queries and execute commands against an MSSQL database.
 
 
+## Important Update - October 24, 2017
+PyPI releases beyond 0.3 may not be backwards compatible with features from this project.
+
+In the spirit of open source, the ownership of the PyPI package mssql_cli has been handed over to a Microsoft SQL Server team with plans to create a new package using the same name to be released under the https://github.com/dbcli project. See https://github.com/seanchon/mssql_cli/issues/1 for conversation details.
+
+We have decided that the least impactful way to go about this is to leave the existing PyPI package releases that relate to this repository in place (releases 0.1, 0.2, and 0.3) so that any users currently using this package can continue to use these releases. Any new development will be added to a new major release and beyond (ex. 1.x.x) and may not be backwards compatible.
+
+In order to install the PyPI packages linked to this repository, please be sure to download the correct version or link your requirements to the correct version.
+
+Example:
+```
+pip install mssql_cli==0.3
+```
+
+
 ## Code Example
 ```python
 import datetime  # used for an example below
